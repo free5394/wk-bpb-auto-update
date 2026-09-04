@@ -1,9 +1,86 @@
-# IDE配置文件（适配Trae IDE）
-.trae/
+### common ###
+HELP.md
+
+### eclipse ###
+.settings/
+.project
+.classpath
+
+### STS ###
+.apt_generated
+.factorypath
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+classes/
+/out/
+*.iws
+*.iml
+*.ipr
+.fastRequest
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
 .vscode/
-.idea/
 .history/
 
+### Trae ###
+.trae/
+
+### agnet ###
+.agents/
+.codegraph/
+.scratch/
+
+### claude ###
+.claude/
+
+### codex ###
+.codex/
+
+### opencode ###
+.opencode/
+.omo/
+
+# 工作树（git worktree add .worktrees/<branch> 隔离开发）
+.worktrees/
+
+### temp ###
+temp/
+tmp/
+logs/
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+*.java~
+*.properties~
+*.xml~
+
+### system ignore ###
+.DS_Store
+Thumbs.db
+
+# 构建产物
+dist/
+
+# 环境文件
+venv/
+.venv/
+env/
+ENV/
+.env
+.env.local
 
 # nodejs
 node_modules/
@@ -13,10 +90,3 @@ package-lock.json
 # wrangler
 wr_modules/
 .wrangler/
-
-## 日志与临时文件
-*.log
-logs/
-Logs/
-tmp/
-temp/
